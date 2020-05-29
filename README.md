@@ -1,7 +1,7 @@
-# word_vectors_game_of_thrones-LIVE
-This is the code for the "How to Make Word Vectors from Game of Thrones (LIVE) " from Siraj Raval on Youtube.
+# Word Vectors - Game of Thrones
+Este código foi desenvolvido no vídeo ["How to Make Word Vectors from Game of Thrones (LIVE)"](https://www.youtube.com/watch?v=pY9EwZ02sXU) de Siraj Raval.
 
-I've made some edits due to libraries updates.
+Fiz algumas atualizações devido à alterações na biblioteca Gensim.
 
 ##Overview
 
