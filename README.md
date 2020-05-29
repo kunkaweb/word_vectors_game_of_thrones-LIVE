@@ -1,7 +1,30 @@
 # Word Vectors - Game of Thrones
 Este código foi desenvolvido no vídeo ["How to Make Word Vectors from Game of Thrones (LIVE)"](https://www.youtube.com/watch?v=pY9EwZ02sXU) de Siraj Raval.
 
-Fiz algumas atualizações devido à alterações na biblioteca Gensim.
+A seguir uma lista de alterações que você deve realizar no código para ficar compatível com as atualizações da biblioteca Gensim.
+
+1) Substitua:
+print("Word2Vec vocabulary length:", len(thrones2vec.vocab))
+
+por
+
+print("Word2Vec vocabulary length:", len(thrones2vec.wv.vocab))
+
+
+2) Substitua:
+thrones2vec.train(sentences)
+
+por
+
+thrones2vec.train(sentences, total_examples=thrones2vec.corpus_count, epochs=30)
+
+
+3) Substitua:
+all_word_vectors_matrix = thrones2vec.syn0
+
+por
+
+all_word_vectors_matrix = thrones2vec.wv.vectors
 
 ##Overview
 
